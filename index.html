@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="style.css" media="all" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script async="async" type="text/javascript" src="script.js"></script>
+        <meta name="viewport" content="width=device-width">
+        <title>Pokemon GO Legendary Catch Calculator - sowiszcze.pl</title>
+        <meta name="description" content="Created by Piotr Sowa legendary pokemon catch probability calculator for Pokemon GO.">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Legendary pokemon catch probability calculator for Pokemon&nbsp;GO</h1>
+            <div class="row">
+                <span class="col-md-3">Berry</span>
+                <span class="col-md-3">Medals</span>
+                <span class="col-md-3">Curve ball</span>
+                <span class="col-md-3">Throw</span>
+            </div>
+            <div class="row">
+                <span class="col-md-3">
+                    <select id="berry" class="col-md-12">
+                        <option value="1">None</option>
+                        <option value="1.5">Razz Berry</option>
+                        <option value="2.5">Golden Razz Berry</option>
+                    </select>
+                </span>
+                <span class="col-md-3">
+                    <select id="medals" class="col-md-12">
+                        <option value="1">None</option>
+                        <option value="1.05">Bronze + None</option>
+                        <option value="1.1">Bronze (or both Bronze)</option>
+                        <option value="1.1">Silver + None</option>
+                        <option value="1.15">Silver + Bronze</option>
+                        <option value="1.2">Silver (or both Silver)</option>
+                        <option value="1.15">Gold + None</option>
+                        <option value="1.2">Gold + Bronze</option>
+                        <option value="1.25">Gold + Silver</option>
+                        <option value="1.3">Gold (or both Gold)</option>
+                    </select>
+                </span>
+                <span class="col-md-3">
+                    <select id="curve" class="col-md-12">
+                        <option value="1">No</option>
+                        <option value="1.7">Yes</option>
+                    </select>
+                </span>
+                <span class="col-md-3">
+                    <select id="throw" class="col-md-12">
+                        <option value="1">Normal</option>
+                        <option value="1">Nice</option>
+                        <option value="1.3">Great</option>
+                        <option value="1.7">Excellent</option>
+                    </select>
+                </span>
+            </div>
+            <div class="row" id="result">
+                <div class="col-md-6" id="result-label">Probability:</div>
+                <div class="col-md-6">
+                    <input id="probability" type="text" readonly="readonly" class="col-md-12" />
+                </div>
+            </div>
+        </div>
+        <!-- content here -->
+        <div id="disclaimer">
+            Created by <a href="https://piotrsowa.pl" title="Piotr Sowa's home page">Piotr Sowa</a> as replacement for crazy Excel magic.
+            If you want to see source code for this, please visit <a href="https://github.com/sowiszcze/pogocatchcalc" title="Project's GitHub page">GitHub</a>.
+        </div>
+    </body>
+</html>

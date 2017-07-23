@@ -1,0 +1,14 @@
+#result {
+    margin-top: 1rem;
+}
+
+#result-label {
+    text-align: right;
+}
+
+#disclaimer {
+    position: absolute;
+    bottom: 1ex;
+    right: 1ex;
+    font-size: 0.875rem;
+}
