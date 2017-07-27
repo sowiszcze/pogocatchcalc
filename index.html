@@ -16,52 +16,69 @@
         <div class="container">
             <h1>Legendary pokemon catch probability calculator for Pokemon&nbsp;GO</h1>
             <div class="row">
-                <span class="col-md-3">Berry</span>
-                <span class="col-md-3">Medals</span>
-                <span class="col-md-3">Curve ball</span>
-                <span class="col-md-3">Throw</span>
-            </div>
-            <div class="row">
-                <span class="col-md-3">
-                    <select id="berry" class="col-md-12">
-                        <option value="1">None</option>
-                        <option value="1.5">Razz Berry</option>
-                        <option value="2.5">Golden Razz Berry</option>
-                    </select>
-                </span>
-                <span class="col-md-3">
-                    <select id="medals" class="col-md-12">
-                        <option value="1">None</option>
-                        <option value="1.05">Bronze + None</option>
-                        <option value="1.1">Bronze (or both Bronze)</option>
-                        <option value="1.1">Silver + None</option>
-                        <option value="1.15">Silver + Bronze</option>
-                        <option value="1.2">Silver (or both Silver)</option>
-                        <option value="1.15">Gold + None</option>
-                        <option value="1.2">Gold + Bronze</option>
-                        <option value="1.25">Gold + Silver</option>
-                        <option value="1.3">Gold (or both Gold)</option>
-                    </select>
-                </span>
-                <span class="col-md-3">
-                    <select id="curve" class="col-md-12">
-                        <option value="1">No</option>
-                        <option value="1.7">Yes</option>
-                    </select>
-                </span>
-                <span class="col-md-3">
-                    <select id="throw" class="col-md-12">
-                        <option value="1">Normal</option>
-                        <option value="1">Nice</option>
-                        <option value="1.3">Great</option>
-                        <option value="1.7">Excellent</option>
-                    </select>
-                </span>
-            </div>
-            <div class="row" id="result">
-                <div class="col-md-6" id="result-label">Probability:</div>
-                <div class="col-md-6">
-                    <input id="probability" type="text" readonly="readonly" class="col-md-12" />
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <span class="col-xs-6 col-md-12"><label for="pokemon">Pokemon</label></span>
+                    <span class="col-xs-6 col-md-12">
+                        <select id="pokemon" class="col-md-12 form-control">
+                            <option value="0.03">Articuno</option>
+                            <option value="0.03">Zapdos</option>
+                            <option value="0.03">Moltres</option>
+                            <option value="0.02">Lugia</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <span class="col-xs-6 col-md-12"><label for="berry">Berry</label></span>
+                    <span class="col-xs-6 col-md-12">
+                        <select id="berry" class="col-md-12 form-control">
+                            <option value="1">None</option>
+                            <option value="1.5">Razz Berry</option>
+                            <option value="2.5">Golden Razz Berry</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <span class="col-xs-6 col-md-12"><label for="medals">Medals</label></span>
+                    <span class="col-xs-6 col-md-12">
+                        <select id="medals" class="col-md-12 form-control">
+                            <option value="1">None</option>
+                            <option value="1.05">Bronze + None</option>
+                            <option value="1.1">Bronze (or both Bronze)</option>
+                            <option value="1.1">Silver + None</option>
+                            <option value="1.15">Silver + Bronze</option>
+                            <option value="1.2">Silver (or both Silver)</option>
+                            <option value="1.15">Gold + None</option>
+                            <option value="1.2">Gold + Bronze</option>
+                            <option value="1.25">Gold + Silver</option>
+                            <option value="1.3">Gold (or both Gold)</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <span class="col-xs-6 col-md-12"><label for="curve">Curve ball</label></span>
+                    <span class="col-xs-6 col-md-12">
+                        <select id="curve" class="col-md-12 form-control">
+                            <option value="1">No</option>
+                            <option value="1.7">Yes</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <span class="col-xs-6 col-md-12"><label for="throw">Throw</label></span>
+                    <span class="col-xs-6 col-md-12">
+                        <select id="throw" class="col-md-12 form-control">
+                            <option value="1">Normal</option>
+                            <option value="1">Nice</option>
+                            <option value="1.3">Great</option>
+                            <option value="1.7">Excellent</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <span class="col-xs-6 col-md-12"><label for="probability">Probability</label></span>
+                    <span class="col-xs-6 col-md-12">
+                        <input id="probability" type="text" readonly="readonly" class="col-md-12 form-control" />
+                    </span>
                 </div>
             </div>
         </div>

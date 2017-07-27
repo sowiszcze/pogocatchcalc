@@ -1,9 +1,9 @@
 $(function onLoad() {
     
     const cpm = 0.597400;
-    const bcr = 0.02;
 
     function calculate() {
+        var bcr = parseFloat($('#pokemon').val());
         var berry = parseFloat($('#berry').val());
         var medals = parseFloat($('#medals').val());
         var curve = parseFloat($('#curve').val());
